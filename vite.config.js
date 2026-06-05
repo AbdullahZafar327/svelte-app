@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [svelte()],
   server: {
     proxy: {
-      '/api': 'http://localhost:3001',
+      '/v1': 'https://svelte-backend-xqxj.onrender.com',
     },
   },
 })

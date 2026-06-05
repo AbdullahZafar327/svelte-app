@@ -14,17 +14,17 @@
   });
 
   async function loadMenu() {
-    const response = await fetch('/api/menu');
+    const response = await fetch('/v1/menu');
     menu = await response.json();
   }
 
   async function loadReservations() {
-    const response = await fetch('/api/reservations');
+    const response = await fetch('/v1/reservations');
     reservations = await response.json();
   }
 
   async function submitOrder() {
-    const response = await fetch('/api/orders', {
+    const response = await fetch('/v1/orders', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(orderForm),
@@ -35,7 +35,7 @@
   }
 
   async function submitReservation() {
-    const response = await fetch('/api/reservations', {
+    const response = await fetch('/v1/reservations', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(reservationForm),
@@ -46,7 +46,7 @@
   }
 
   async function submitContact() {
-    const response = await fetch('/api/contact', {
+    const response = await fetch('/v1/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(contactForm),
