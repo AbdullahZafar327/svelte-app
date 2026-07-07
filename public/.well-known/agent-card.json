@@ -1,0 +1,304 @@
+{
+  "url": "https://svelte-app-bice-rho.vercel.app/a2a",
+  "name": "Tonight's specials Orchestrator Agent",
+  "owner": "svelte-app-bice-rho.vercel.app",
+  "scope": "external",
+  "skills": [
+    {
+      "id": "get_menu",
+      "name": "Get Menu",
+      "tags": [
+        "Food & Beverage",
+        "query",
+        "en",
+        "draft"
+      ],
+      "routing": [
+        {
+          "via": "http",
+          "source": "runtime_binding",
+          "target": "/v1/menu",
+          "executable": true
+        },
+        {
+          "via": "openapi",
+          "source": "openapi_operation",
+          "target": "/v1/menu",
+          "executable": true
+        },
+        {
+          "via": "mcp",
+          "source": "mcp_tool",
+          "target": "get_menu",
+          "executable": true
+        },
+        {
+          "via": "a2a",
+          "source": "a2a_skill",
+          "target": "get_menu",
+          "executable": true
+        }
+      ],
+      "examples": [
+        "Show get menu",
+        "Look up get menu"
+      ],
+      "inputModes": [
+        "application/json"
+      ],
+      "description": "Fetches the restaurant menu from the backend.",
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "get_reservations",
+      "name": "Get Reservations",
+      "tags": [
+        "Food & Beverage",
+        "query",
+        "en",
+        "draft"
+      ],
+      "routing": [
+        {
+          "via": "http",
+          "source": "runtime_binding",
+          "target": "/v1/reservations",
+          "executable": true
+        },
+        {
+          "via": "openapi",
+          "source": "openapi_operation",
+          "target": "/v1/reservations",
+          "executable": true
+        },
+        {
+          "via": "mcp",
+          "source": "mcp_tool",
+          "target": "get_reservations",
+          "executable": true
+        },
+        {
+          "via": "a2a",
+          "source": "a2a_skill",
+          "target": "get_reservations",
+          "executable": true
+        }
+      ],
+      "examples": [
+        "Show get reservations",
+        "Look up get reservations"
+      ],
+      "inputModes": [
+        "application/json"
+      ],
+      "description": "Fetches reservation records from the backend.",
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "create_orders",
+      "name": "Create Orders",
+      "tags": [
+        "Food & Beverage",
+        "mutation",
+        "en",
+        "draft"
+      ],
+      "routing": [
+        {
+          "via": "http",
+          "source": "runtime_binding",
+          "target": "/v1/orders",
+          "executable": true
+        },
+        {
+          "via": "openapi",
+          "source": "openapi_operation",
+          "target": "/v1/orders",
+          "executable": true
+        },
+        {
+          "via": "mcp",
+          "source": "mcp_tool",
+          "target": "create_orders",
+          "executable": true
+        },
+        {
+          "via": "a2a",
+          "source": "a2a_skill",
+          "target": "create_orders",
+          "executable": true
+        }
+      ],
+      "examples": [
+        "Submit create orders",
+        "Create create orders"
+      ],
+      "inputModes": [
+        "application/json"
+      ],
+      "description": "Creates a customer order.",
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "create_reservations",
+      "name": "Create Reservations",
+      "tags": [
+        "Food & Beverage",
+        "mutation",
+        "en",
+        "draft"
+      ],
+      "routing": [
+        {
+          "via": "http",
+          "source": "runtime_binding",
+          "target": "/v1/reservations",
+          "executable": true
+        },
+        {
+          "via": "openapi",
+          "source": "openapi_operation",
+          "target": "/v1/reservations",
+          "executable": true
+        },
+        {
+          "via": "mcp",
+          "source": "mcp_tool",
+          "target": "create_reservations",
+          "executable": true
+        },
+        {
+          "via": "a2a",
+          "source": "a2a_skill",
+          "target": "create_reservations",
+          "executable": true
+        }
+      ],
+      "examples": [
+        "Submit create reservations",
+        "Create create reservations"
+      ],
+      "inputModes": [
+        "application/json"
+      ],
+      "description": "Creates a customer reservation.",
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "create_contact",
+      "name": "Create Contact",
+      "tags": [
+        "Food & Beverage",
+        "mutation",
+        "en",
+        "draft"
+      ],
+      "routing": [
+        {
+          "via": "http",
+          "source": "runtime_binding",
+          "target": "/v1/contact",
+          "executable": true
+        },
+        {
+          "via": "openapi",
+          "source": "openapi_operation",
+          "target": "/v1/contact",
+          "executable": true
+        },
+        {
+          "via": "mcp",
+          "source": "mcp_tool",
+          "target": "create_contact",
+          "executable": true
+        },
+        {
+          "via": "a2a",
+          "source": "a2a_skill",
+          "target": "create_contact",
+          "executable": true
+        }
+      ],
+      "examples": [
+        "Submit create contact",
+        "Create create contact"
+      ],
+      "inputModes": [
+        "application/json"
+      ],
+      "description": "Sends a customer contact message.",
+      "outputModes": [
+        "application/json"
+      ]
+    }
+  ],
+  "source": {
+    "asp_spec_id": "svelte-app-bice-rho.vercel.app",
+    "agent_json_url": "https://svelte-app-bice-rho.vercel.app/agent.json",
+    "agent_json_hash": "draft-7dfbf2b0",
+    "awp_version_detected": "0.2",
+    "agent_json_last_fetched": "2026-07-04T13:20:10.774Z"
+  },
+  "version": "0.1.0",
+  "agent_id": "svelte-app-bice-rho.vercel.app:boundary_agent",
+  "metadata": {
+    "draft": true,
+    "source": "asp_spec",
+    "verified": false,
+    "card_kind": "boundary_agent"
+  },
+  "policies": [
+    "public_boundary_agent_routes_to_private_internal_agents_when_runtime_policy_allows"
+  ],
+  "provider": {
+    "url": "https://svelte-app-bice-rho.vercel.app",
+    "organization": "Tonight's specials"
+  },
+  "created_at": "2026-07-04T13:20:10.774Z",
+  "visibility": "public",
+  "callable_by": [
+    "*"
+  ],
+  "description": "A pizza ordering and reservation app with menu browsing, order placement, table reservations, and customer contact features. Public boundary/orchestrator agent. Internal dispatch is intentionally not exposed in this card.",
+  "schema_link": "https://schemas.asp.dev/agent-card/0.3/schema.json",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": true
+  },
+  "generated_by": "agentforge-generator@0.1.0",
+  "registry_url": "http://localhost:8080/registry/svelte-app-bice-rho.vercel.app",
+  "routing_hints": {
+    "note": "routes internally when policy allows",
+    "public_surface": [
+      "get_menu",
+      "get_reservations",
+      "create_orders",
+      "create_reservations",
+      "create_contact"
+    ]
+  },
+  "card_signature": null,
+  "protocolVersion": "0.3",
+  "securitySchemes": {
+    "none": {
+      "type": "none",
+      "reason": "No authentication requirement or auth endpoint evidence was detected for this public card.",
+      "status": "available"
+    }
+  },
+  "defaultInputModes": [
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "registry_placement": "public_registry"
+}
